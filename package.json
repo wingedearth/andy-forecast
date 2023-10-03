@@ -9,5 +9,8 @@
   "private": false,
   "scripts": {
     "start": "node ./index"
+  },
+  "dependencies": {
+    "release-please": "^16.0.0"
   }
 }
