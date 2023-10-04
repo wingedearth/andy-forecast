@@ -16,10 +16,19 @@ A rendering application with an Express.js server and a React frontend
 3. [Git](https://git-scm.com)
 4. [release-please](https://www.npmjs.com/package/release-please)
 5. [commitlint](https://commitlint.js.org/#/)
+6. [BabelJS](http://babeljs.io)
+7. [ESLint] (https://eslint.org/)
+
+## Set up your local repository
+
+1. From your command line shell (Bash or Zsh), in a directory of your choice, enter the following command, to create a folder called "andy-client": ```git clone https://github.com/wingedearth/andy-client.git```
+2. Enter ```cd andy-client``` to enter the folder.
+3. Enter ```yarn``` to run yarn, which will install the local NPM package dependencies. If you do not have yarn installed globally on your machine, then first enter ```npm i -g yarn``` to install yarn.
 
 ## Starting the Application
 
-1. Enter ```npm start``` in the terminal.
+1. Enter ```npm build``` on the command line to build/transpile application.
+2. Enter ```npm start``` on the command line to start application.
 
 ## Conventional Commits
 
