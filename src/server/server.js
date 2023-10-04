@@ -1,12 +1,33 @@
-const quote1 = '"Nothing great was ever achieved without enthusiasm." - Ralph Waldo Emerson';
-const quote2 =
-  '"Regard it as just as desirable to build a chicken house as to build a cathedral." - Frank Lloyd Wright';
+import express from 'express';
+import router from './router';
 
-const start = () => {
-  console.log(quote1);
-  console.log(quote2);
-};
+const port = process.env.PORT || 4000;
+const app = express();
 
-start();
+const serverAwake = `A server has materialized at port, ${port}`;
 
-module.exports = start;
+// Parsers for POST data
+app.use(express.json({ limit: '20mb' }));
+app.use(express.urlencoded({ extended: false, limit: '20mb' }));
+
+// Error logger
+app.on('error', (err) => {
+  console.error(err?.message);
+});
+
+// Attach router
+app.use(router);
+
+// Start server
+const server = app.listen(port, () => {
+  console.log(serverAwake);
+});
+
+process.on('SIGINT', () => {
+  server.close((err) => {
+    if (err) return process.exit(1);
+
+    process.exit(0);
+    return false;
+  });
+});
