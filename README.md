@@ -27,8 +27,14 @@ A rendering application with an Express.js server and a React frontend
 
 ## Starting the Application
 
-1. Enter ```npm build``` on the command line to build/transpile application.
-2. Enter ```npm start``` on the command line to start application.
+### Development
+
+1. Enter ```yarn build``` on the command line to build/transpile application.
+2. Enter ```yarn server``` on the command line to start application.
+
+### Production
+
+1. Enter ```yarn start``` to build and start the server
 
 ## Conventional Commits
 
