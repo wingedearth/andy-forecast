@@ -8,12 +8,18 @@
   "license": "UNLICENSED",
   "private": false,
   "scripts": {
-    "start": "node ./index"
+    "build": "./node_modules/.bin/babel src --out-dir dist",
+    "clean": "yarn rimraf dist",
+    "start": "node dist/index"
   },
   "dependencies": {
-    "release-please": "^16.0.0"
+    "release-please": "^16.0.0",
+    "rimraf": "^5.0.5"
   },
   "devDependencies": {
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
     "@commitlint/cli": "^17.7.2",
     "@commitlint/config-conventional": "^17.7.0",
     "husky": "^8.0.3"
