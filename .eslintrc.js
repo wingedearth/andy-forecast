@@ -6,6 +6,10 @@ module.exports = {
   extends: ['standard', 'prettier'],
   parser: '@babel/eslint-parser',
   parserOptions: {
+    ecmaFeatures: {
+      modules: true,
+      jsx: true
+    },
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
