@@ -10,10 +10,11 @@
   "scripts": {
     "build": "./node_modules/.bin/babel src --out-dir dist",
     "clean": "yarn rimraf dist",
-    "start": "node dist/index"
+    "start": "node dist/index",
+    "prepare": "husky install"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*.js": "eslint"
   },
   "dependencies": {
     "release-please": "^16.0.0",
@@ -34,6 +35,8 @@
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-promise": "^6.1.1",
     "husky": "^8.0.3",
-    "prettier": "3.0.3"
+    "lint-staged": "^14.0.1",
+    "prettier": "3.0.3",
+    "prettier-standard": "^16.4.1"
   }
 }

@@ -1,19 +1,26 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true,
+    es2021: true
   },
-  extends: ["standard", "prettier"],
-  parser: "@babel/eslint-parser",
+  extends: ['standard', 'prettier'],
+  parser: '@babel/eslint-parser',
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
-  plugins: ["prettier"],
+  plugins: ['import', 'prettier'],
   rules: {
-    "comma-dangle": ["error", "never"],
-    indent: ["error", 4],
-    semi: 0,
-    "n/exports-style": ["error", "module.exports"],
-  },
+    'comma-dangle': ['error', 'never'],
+    'n/exports-style': ['error', 'module.exports'],
+    'prettier/prettier': [
+      'error',
+      {
+        singleQuote: true,
+        printWidth: 100,
+        trailingComma: 'none'
+      }
+    ],
+    semi: 0
+  }
 };
