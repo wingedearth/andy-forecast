@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.1.0](https://github.com/wingedearth/andy-client/compare/v1.0.1...v1.1.0) (2023-10-04)
+
+
+### Features
+
+* add build with babeljs ([7043391](https://github.com/wingedearth/andy-client/commit/7043391fa9d2a3b6bbdea43b50a5ab6eb0b26ff9))
+* add eslint and prettier ([b6e4085](https://github.com/wingedearth/andy-client/commit/b6e40855f581e60874d03f0250abeac396bffada))
+* add server side webpack build ([a97c6be](https://github.com/wingedearth/andy-client/commit/a97c6bea597a816d7ce806a44239f6923bc6f8df))
+
+
+### Bug Fixes
+
+* add lint-staged and update eslint config ([77779e0](https://github.com/wingedearth/andy-client/commit/77779e0547bc7229f089e6bb8d8a5f9ac72440f9))
+
 ## 1.0.1 (2023-10-04)
 
 
