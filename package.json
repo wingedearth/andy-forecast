@@ -8,13 +8,13 @@
   "license": "UNLICENSED",
   "private": false,
   "scripts": {
-    "build": "node build.js",
-    "build:prod": "NODE_ENV=production node build.js",
+    "build:dev": "node build.js",
+    "build": "NODE_ENV=production node build.js",
     "clean": "yarn rimraf dist",
     "dev": "nodemon ./dist/server/server.js",
     "prepare": "husky install",
     "server": "NODE_ENV=production node ./dist/server/server.js",
-    "start": "yarn clean && yarn build:prod && yarn server"
+    "start": "yarn server"
   },
   "lint-staged": {
     "**/*.js": "eslint"
