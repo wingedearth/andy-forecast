@@ -719,7 +719,7 @@
     "@babel/helper-plugin-utils" "^7.22.5"
     "@babel/plugin-syntax-optional-catch-binding" "^7.8.3"
 
-"@babel/plugin-transform-optional-chaining@^7.22.15":
+"@babel/plugin-transform-optional-chaining@^7.22.15", "@babel/plugin-transform-optional-chaining@^7.23.0":
   version "7.23.0"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-optional-chaining/-/plugin-transform-optional-chaining-7.23.0.tgz#73ff5fc1cf98f542f09f29c0631647d8ad0be158"
   integrity sha512-sBBGXbLJjxTzLBF5rFWaikMnOGOk/BmK6vVByIdEggZ7Vn6CvWXZyRkkLFK6WE0IF8jSliyOkUN6SScFgzCM0g==

@@ -36,6 +36,10 @@ A rendering application with an Express.js server and a React frontend
 
 1. Enter ```yarn start``` to build and start the server
 
+## Version
+
+When the server is available, use the /version endpoint to see app information.
+
 ## Conventional Commits
 
 From conventionalcommits.org:
