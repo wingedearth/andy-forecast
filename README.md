@@ -8,6 +8,7 @@ A rendering application with an Express.js server and a React frontend
 1. [GitHub Respository](https://github.com/wingedearth/andy-client)
 2. [Changelog](https://github.com/wingedearth/andy-client/blob/master/CHANGELOG.md)
 3. [Trello Board](https://trello.com/b/ar4s11cT/andy-client)
+4. [Deployed App](https://andy-client-09597ceb8f94.herokuapp.com/)
 
 ## Technologies
 
