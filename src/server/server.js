@@ -8,6 +8,9 @@ const app = express();
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: false, limit: '20mb' }));
 
+// Static paths
+app.use(express.static('dist/client'));
+
 // Error logger
 app.on('error', (err) => {
   console.error(err?.message);
@@ -24,6 +27,7 @@ const server = app.listen(port, () => {
 });
 
 process.once('SIGUSR2', () => {
+  console.log('SIGUSR2 recieved');
   server.close(() => {
     process.kill(process.pid, 'SIGUSR2');
   });

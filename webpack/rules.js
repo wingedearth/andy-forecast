@@ -1,10 +1,9 @@
 const path = require('path');
 
-const babelConfigFile = path.join(__dirname, '..', 'babel.config.json');
+const babelServerConfigFile = path.join(__dirname, '..', 'babel.server.config.json');
+const babelClientConfigFile = path.join(__dirname, '..', 'babel.config.json');
 
-const jsRule = () => {
-  const configFile = babelConfigFile;
-
+const jsRule = (configFile) => {
   return {
     test: /\.(js)$/,
     exclude: /node_modules/,
@@ -17,9 +16,7 @@ const jsRule = () => {
   };
 };
 
-const jsxRule = () => {
-  const configFile = babelConfigFile;
-
+const jsxRule = (configFile) => {
   return {
     test: /\.(jsx)$/,
     exclude: /node_modules/,
@@ -32,4 +29,8 @@ const jsxRule = () => {
   };
 };
 
-module.exports = () => [jsRule(), jsxRule()];
+module.exports = ({ isServer } = {}) => {
+  const configFile = isServer ? babelServerConfigFile : babelClientConfigFile;
+
+  return [jsRule(configFile), jsxRule(configFile)];
+};

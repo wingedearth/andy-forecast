@@ -6,6 +6,7 @@ import Home from '@/components/pages/Home/index';
 
 const appTitle = 'andy-client';
 const pageTitle = 'Home';
+const entryName = 'home';
 
 const createPageTemplate = (data) => {
   const markup = renderToString(
@@ -13,7 +14,7 @@ const createPageTemplate = (data) => {
       <Home />
     </App>
   );
-  return template(data, markup);
+  return template(data, markup, entryName);
 };
 
 /**
