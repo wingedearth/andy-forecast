@@ -3,7 +3,7 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['standard', 'prettier'],
+  extends: ['plugin:react/recommended', 'standard', 'prettier'],
   parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaFeatures: {
@@ -13,7 +13,7 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  plugins: ['import', 'prettier'],
+  plugins: ['import', 'prettier', 'react'],
   rules: {
     'comma-dangle': ['error', 'never'],
     'n/exports-style': ['error', 'module.exports'],
@@ -26,5 +26,10 @@ module.exports = {
       }
     ],
     semi: 0
+  },
+  settings: {
+    react: {
+      version: 'detect'
+    }
   }
 };
