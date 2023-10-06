@@ -2,6 +2,7 @@ const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 const getRules = require('./webpack/rules');
 const getPlugins = require('./webpack/plugins');
+const getOptimization = require('./webpack/optimization');
 
 const isServer = true;
 const extensions = ['.js', '.json', '.jsx'];
@@ -34,6 +35,7 @@ module.exports = (variables) => {
     '@': path.join(__dirname, 'src')
   };
   const rules = getRules({ isServer });
+  const optimization = getOptimization({ isServer });
 
   return {
     devtool,
@@ -50,6 +52,7 @@ module.exports = (variables) => {
       rules
     },
     plugins,
+    optimization,
     target,
     externals,
     watchOptions

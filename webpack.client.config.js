@@ -1,9 +1,10 @@
 const path = require('path');
 const getRules = require('./webpack/rules');
 const getPlugins = require('./webpack/plugins');
+const getOptimization = require('./webpack/optimization');
 
 const isServer = false;
-const extensions = ['.js', '.json', '.jsx'];
+const extensions = ['.js', '.json', '.jsx', 'css', 'sass', 'scss'];
 const target = 'web';
 const watchOptions = {
   ignored: /node_modules/
@@ -16,6 +17,9 @@ const watchOptions = {
  */
 module.exports = (variables) => {
   const { devtool, mode, watch } = variables;
+  const rules = getRules({ isServer });
+  const plugins = getPlugins(isServer, variables);
+  const optimization = getOptimization({ isServer: true });
 
   return {
     devtool,
@@ -37,9 +41,10 @@ module.exports = (variables) => {
       modules: ['node_modules']
     },
     module: {
-      rules: getRules({ isServer })
+      rules
     },
-    plugins: getPlugins(isServer, variables),
+    plugins,
+    optimization,
     target,
     watchOptions
   };
