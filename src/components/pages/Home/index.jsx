@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAppContext } from '@/components/App/context';
+import './home.scss';
 
 const loadedMessage = 'React application has loaded.';
 
@@ -17,7 +18,8 @@ const Home = () => {
   return (
     <div className="home" data-hook="home">
       <p>{welcome}</p>
-      {loaded && <p>{loadedMessage}</p>}
+      <p className="emoji">😎</p>
+      {loaded && <p className="home__loaded">{loadedMessage}</p>}
     </div>
   );
 };
