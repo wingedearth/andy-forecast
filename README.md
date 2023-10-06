@@ -30,7 +30,7 @@ A rendering application with an Express.js server and a React frontend
 
 ### Development
 
-1. Enter ```yarn build``` on the command line to build/transpile application with Webpack watch mode.
+1. Enter ```yarn build:dev``` on the command line to build/transpile application with Webpack watch mode.
 2. Enter ```yarn dev``` on the command line (in a different tab) to start application.
 
 ### Production
