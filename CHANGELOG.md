@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/wingedearth/andy-client/compare/v1.3.0...v1.4.0) (2023-10-09)
+
+
+### Features
+
+* add image loading ([a7c167b](https://github.com/wingedearth/andy-client/commit/a7c167b20effdc71ffa0674a548d4c8069a03572))
+
 ## [1.3.0](https://github.com/wingedearth/andy-client/compare/v1.2.0...v1.3.0) (2023-10-06)
 
 
