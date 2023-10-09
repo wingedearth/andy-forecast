@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAppContext } from '@/components/App/context';
+import Usa from '@/assets/images/usa.svg';
 import './home.scss';
 
 const loadedMessage = 'React application has loaded.';
@@ -17,9 +18,20 @@ const Home = () => {
 
   return (
     <div className="home" data-hook="home">
-      <p>{welcome}</p>
-      <p className="emoji">😎</p>
-      {loaded && <p className="home__loaded">{loadedMessage}</p>}
+      <div>
+        <div>
+          <div className="home__welcome">
+            <div className="home__contents">
+              <p>{welcome}</p>
+              {loaded && <p className="home__loaded">{loadedMessage}</p>}
+              <div className="home__usa">
+                <Usa />
+              </div>
+              <p className="emoji">😎</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
