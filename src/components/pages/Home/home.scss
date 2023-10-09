@@ -1,10 +1,40 @@
 
 @import '@/styles/helpers';
 
-.home {
-    padding: 10px;
+.home p {
+    margin: 5px auto;
+}
+
+.home__welcome {
+    background-image: url("@/assets/images/yosemite.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+.home__contents {
+    text-align: center;
+    color: white;
+    p {
+        margin: 20px auto;
+    }
+    font-size: 20px;
 }
 
 .home__loaded {
 	color: $red;
+}
+
+.home__usa {
+	height: 100px;
+	svg {
+		max-width: 100%;
+		max-height: 100%;
+	}
 }

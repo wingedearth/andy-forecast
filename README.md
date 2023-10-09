@@ -19,6 +19,10 @@ A rendering application with an Express.js server and a React frontend
 5. [commitlint](https://commitlint.js.org/#/)
 6. [BabelJS](http://babeljs.io)
 7. [ESLint] (https://eslint.org/)
+8. [Webpack 5](https://webpack.js.org)
+9. [React 18](https://reactjs.org/)
+10. [@svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
+
 
 ## Set up your local repository
 
