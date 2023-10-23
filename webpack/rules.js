@@ -39,7 +39,12 @@ const styleRule = ({ isServer }) => ({
   exclude: /node_modules/,
   use: [
     !isServer && MiniCssExtractPlugin.loader,
-    'css-loader',
+    {
+      loader: 'css-loader',
+      options: {
+        importLoaders: 1
+      }
+    },
     'postcss-loader',
     'sass-loader'
   ].filter(Boolean)
