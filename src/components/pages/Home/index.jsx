@@ -22,6 +22,7 @@ const Home = () => {
         <div>
           <div className="home__welcome">
             <div className="home__contents">
+              <h1 className="text-3xl font-bold underline">Hello Tailwind!</h1>
               <p>{welcome}</p>
               {loaded && <p className="home__loaded">{loadedMessage}</p>}
               <div className="home__usa">
