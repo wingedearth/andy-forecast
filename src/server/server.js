@@ -1,10 +1,12 @@
 import express from 'express';
 import router from './router';
+import bodyParser from 'body-parser';
 
 const port = process.env.PORT || 4000;
 const app = express();
 
 // Parsers for POST data
+app.use(bodyParser.json());
 app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ extended: false, limit: '20mb' }));
 

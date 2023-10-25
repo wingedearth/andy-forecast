@@ -1,7 +1,7 @@
-# andy-client
+# andy-forecast
 
 ## Overview
-A rendering application with an Express.js server and a React frontend
+A light weight interface to obtain weather forecast information
 
 ## Resources
 
