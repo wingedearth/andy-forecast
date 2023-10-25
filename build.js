@@ -7,16 +7,17 @@ const clientConfig = require('./webpack.client.config.js');
 const serverConfig = require('./webpack.server.config.js');
 
 const getVariables = () => {
-  const { IS_DEPLOYED } = process.env;
-  if (!IS_DEPLOYED) require('dotenv').config();
   const APP_VERSION = process.env.APP_VERSION || process.env.npm_package_version;
   const NODE_ENV = process.env.NODE_ENV || 'development';
   const isProd = NODE_ENV === 'production';
+  if (!isProd) require('dotenv').config();
+  const APP_ID = process.env.APP_ID || null;
   const mode = isProd ? 'production' : 'development';
   const devtool = isProd ? 'source-map' : 'eval-cheap-module-source-map';
   const watch = !isProd;
 
   const variables = {
+    APP_ID,
     APP_VERSION,
     devtool,
     isProd,
