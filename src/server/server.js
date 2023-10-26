@@ -1,9 +1,14 @@
 import express from 'express';
 import router from './router';
 import bodyParser from 'body-parser';
+import cors from 'cors';
 
 const port = process.env.PORT || 4000;
 const app = express();
+
+if (process.env.NODE_ENV !== 'production') {
+  app.use(cors());
+}
 
 // Parsers for POST data
 app.use(bodyParser.json());
