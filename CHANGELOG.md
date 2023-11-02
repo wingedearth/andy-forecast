@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.1](https://github.com/wingedearth/andy-forecast/compare/v1.5.0...v1.5.1) (2023-11-02)
+
+
+### Bug Fixes
+
+* add day of week to forecast ([66d288d](https://github.com/wingedearth/andy-forecast/commit/66d288d8ab0303c8ebc027fee2294761aa6416c2))
+
 ## [1.5.0](https://github.com/wingedearth/andy-forecast/compare/v1.4.0...v1.5.0) (2023-11-02)
 
 
