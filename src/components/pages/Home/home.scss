@@ -7,10 +7,9 @@
 
 .home__welcome {
     background-image: url("@/assets/images/yosemite.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
     position: relative;
     display: flex;
     flex-direction: column;
