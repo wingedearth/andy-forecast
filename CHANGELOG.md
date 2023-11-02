@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.4.0](https://github.com/wingedearth/andy-forecast/compare/v1.3.0...v1.4.0) (2023-11-02)
+
+
+### Features
+
+* add navigation ([33741b6](https://github.com/wingedearth/andy-forecast/commit/33741b6cbe64b16fc1e77f0d4f491ff0344ec419))
+
+
+### Bug Fixes
+
+* add cors middleware ([fb9dfc2](https://github.com/wingedearth/andy-forecast/commit/fb9dfc27425250a82ab21b7efd74e2208ef211b6))
+
 ## 1.3.0 (2023-10-25)
 
 
