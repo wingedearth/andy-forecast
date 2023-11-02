@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.5.0](https://github.com/wingedearth/andy-forecast/compare/v1.4.0...v1.5.0) (2023-11-02)
+
+
+### Features
+
+* add weather search by zip ([bc2a4e3](https://github.com/wingedearth/andy-forecast/commit/bc2a4e3b0ebadd71e0bf8f28b5fd7fffeaa4db62))
+
 ## [1.4.0](https://github.com/wingedearth/andy-forecast/compare/v1.3.0...v1.4.0) (2023-11-02)
 
 
