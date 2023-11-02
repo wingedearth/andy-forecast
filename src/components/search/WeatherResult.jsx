@@ -21,13 +21,17 @@ const WeatherResult = ({ rawDate, resultIndex, tempData, weather }) => {
   // Open Weather Map hosts the weather icons referenced in their data
   const weatherIcon = `http://openweathermap.org/img/wn/${weather?.icon}@2x.png`;
 
-  const prettyDate = getPrettyDate(fromUnixTime(rawDate));
+  const myDate = fromUnixTime(rawDate);
+  const prettyDate = getPrettyDate(myDate);
+  const day = format(myDate, 'EEEE');
+  console.log('day:', day);
 
   // reverse each color class by index to alternate bg color
   const reverseColorsClass = resultIndex % 2 === 1 ? 'weather-result--reverse' : '';
 
   return (
     <div className={`weather-result container ${reverseColorsClass}`}>
+      <p>{day}</p>
       <p>{prettyDate}</p>
 
       <div className="weather-result__forecast">
