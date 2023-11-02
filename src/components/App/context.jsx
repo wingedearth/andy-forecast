@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react';
 
 export const AppContext = createContext({
-  appTitle: 'andy-client',
+  appTitle: 'andy-forecast',
   pageTitle: 'App',
   params: {}
 });
