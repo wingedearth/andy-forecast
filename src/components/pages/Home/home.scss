@@ -1,39 +1,20 @@
 
 @import '@/styles/helpers';
 
-.home p {
-    margin: 5px auto;
-}
+.home {
+    background-color: $blue;
 
-.home__welcome {
-    background-image: url("@/assets/images/yosemite.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    height: 100vh;
-}
-
-.home__contents {
-    text-align: center;
-    color: white;
-    p {
-        margin: 20px auto;
+    &__contents {
+        padding: 10px;
+        text-align: center;
+        color: white;
+        font-size: 20px;
     }
-    font-size: 20px;
-}
 
-.home__loaded {
-	color: $red;
-}
-
-.home__usa {
-	height: 100px;
-	svg {
-		max-width: 100%;
-		max-height: 100%;
-	}
+    &__directions {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: $weight-semibold;
+        margin: 15px auto;
+    }
 }

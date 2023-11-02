@@ -4,7 +4,7 @@ import template from '@/server/template';
 import App from '@/components/App/index';
 import Home from '@/components/pages/Home/index';
 
-const appTitle = 'andy-forecast';
+const appTitle = 'Forecast USA';
 const pageTitle = 'Home';
 const entryName = 'home';
 

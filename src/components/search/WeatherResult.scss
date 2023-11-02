@@ -1,0 +1,49 @@
+@import '@/styles/helpers';
+
+.weather-result {
+	color: $color-2;
+	background-color: $color-1;
+  padding: 20px;
+}
+
+.weather-result--reverse {
+	color: $color-2;
+	background-color: $color-3;
+}
+
+.weather-result__conditions {
+	display: flex;
+	align-items: center;
+	margin: -5px auto;
+}
+
+.weather-result__description:first-letter {
+	text-transform: capitalize;
+}
+
+.weather-result__icon {
+	margin: -20px auto;
+}
+
+.weather-result__forecast {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-top: 20px;
+
+  .weather-result__icon {
+    margin: 1px;
+  }
+
+  .weather-result__details {
+    font-size: 15px;
+    margin-left: 10px;
+    text-align: left;
+  }
+
+  .weather-result__current {
+    font-size: 50px;
+  }
+}

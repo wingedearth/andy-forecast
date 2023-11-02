@@ -1,6 +1,8 @@
 import React from 'react';
 import { any, object } from 'prop-types';
 import { AppContext } from './context';
+import Navigation from '@/components/navigation';
+import { navIcons } from '../../constants/navIcons';
 import '@/styles/styles.scss';
 
 /**
@@ -11,7 +13,10 @@ import '@/styles/styles.scss';
  */
 const App = ({ children, data }) => (
   <AppContext.Provider value={data}>
-    <main>{children}</main>
+    <main>
+      <Navigation icons={navIcons} />
+      {children}
+    </main>
   </AppContext.Provider>
 );
 
